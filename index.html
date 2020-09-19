@@ -45,7 +45,7 @@
     <link rel="manifest" href="icons/manifest.json">
     <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
 
-    <title>Arpit Dalal | Web developer portfolio | Javascript developer</title>
+    <title>Arpit Dalal - Web developer portfolio</title>
 
     <!-- Google Tag Manager -->
     <script>
@@ -63,9 +63,12 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
     <!-- custom css -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/homepage.css">
 </head>
 
 <body>
@@ -76,7 +79,6 @@
 
     <div class="main">
         <div class="mobile d-block d-lg-none d-xl-none">
-
             <nav class="navbar fixed-top navbar-expand-lg">
                 <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
                     Dalal</a>
@@ -100,20 +102,20 @@
                             <a class="nav-item" href="/contact">Get in touch</a>
                         </li>
                         <li class="nav-link-mb" id="resume">
-                            <a class="nav-item" href="/resume" target="_blank">Resume</a>
+                            <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
                         </li>
                     </ul>
-
                     <label class="toggle-label toggle-label-mb" title="">
                         <span id="toggle-title"></span>
                         <div class="toggle">
                             <input type="checkbox" class="toggle-state toggleState" />
+                            <div class="indicator2"></div>
                             <div class="indicator"></div>
                         </div>
                     </label>
                 </div>
             </nav>
-            <div class="cookie-consent cookie-mb">
+            <div class="cookie-consent cookie-mb mb-2">
                 We use cookies for better user experience. <button class="cookie-okay">Okay</button>
             </div>
 
@@ -123,36 +125,10 @@
                     <a href="/" class="head">
                         <h1 class="anim card-title">Arpit Dalal</h1>
                     </a>
-                    <h5 class="anim card-sub-title">Web developer</h5>
-                    <!-- <div class="anim social-links">
-                        <a href="https://github.com/arpitdalal" class="social-link github" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </span>
-                            Github
-                        </a>
-                        <a href="https://linkedin.com/in/arpitdalal/" class="social-link linkedin" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </span>
-                            LinkedIn
-                        </a>
-                    </div> -->
+                    <h5 class="anim card-sub-title mt-2">Web developer</h5>
                     <div class="anim card-text">
-                        Hi👋 my name is Arpit and I am a web lover. I have extensive and applied experience in
-                        building web applications and websites using different technologies.
+                        <p>Hi👋 my name is Arpit Dalal and I am a web developer. I have extensive and applied experience
+                            in building web applications using different technologies.</p>
                     </div>
                     <div class="d-flex flex-column mt-2">
                         <span name="projects" class="cta cta-primary anim" id="cta-work">

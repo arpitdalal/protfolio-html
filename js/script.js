@@ -17,9 +17,8 @@ $(document).ready(function() {
     $('.nav-link.active').removeClass('active');
     $(this).addClass('active');
     if ($(this).attr('id') === 'resume') {
-      console.log('eee');
       $load.empty();
-      return $load.append('<iframe width="100%" height="100%" style="border: none;" src="/resume"></iframe>');
+      return $load.append('<iframe width="100%" height="100%" style="border: none;" src="./pdfs/resume.pdf"></iframe>');
     }
     return $load.load(`/${$(this).attr('id')} #${$(this).attr('id')}Div`);
   });

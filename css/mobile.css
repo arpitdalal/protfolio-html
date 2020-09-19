@@ -1,5 +1,49 @@
-/*Cookie Consent Begin*/
+.light-mode {
+    --theme-ui-colors-highlight: #7f5af0 !important;
+    --theme-ui-colors-text: #0d0d0d !important;
+    --theme-ui-colors-background: #eff0f3 !important;
+    --theme-ui-colors-card-background: #eff0f3 !important;
+    --theme-ui-colors-box-shadow-dark: #cbcccf !important;
+    --theme-ui-colors-box-shadow-light: #ffffff !important;
+    --theme-ui-colors-highlight-text: #2a2a2a !important;
+    --theme-ui-colors-icon: #7f5af0 !important;
+    --theme-ui-colors-icon-background: #eff0f3 !important;
+    --theme-ui-colors-card-shadow: 0 4px 8px 0 rgb(179, 179, 179), 0 6px 20px 0 rgb(179, 179, 179) !important;
+}
 
+.main {
+    --theme-ui-colors-highlight: #7f5af0;
+    --theme-ui-colors-text: #e6e6e6;
+    --theme-ui-colors-background: #16161a;
+    --theme-ui-colors-card-background: #16161a;
+    --theme-ui-colors-box-shadow-dark: #0c0c0e;
+    --theme-ui-colors-box-shadow-light: #24242b;
+    --theme-ui-colors-highlight-text: #c3d2e6;
+    --theme-ui-colors-icon: #7f5af0;
+    --theme-ui-colors-icon-background: #fffffe;
+    --theme-ui-colors-card-shadow: 0 4px 8px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0);
+    background: var(--theme-ui-colors-background);
+    color: var(--theme-ui-colors-text);
+    transition: .5s;
+    padding: 20px;
+    padding-top: 90px;
+}
+
+.card {
+    border: none;
+    transition: .5s;
+    height: 100vh;
+    text-align: center;
+    background: var(--theme-ui-colors-background);
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px var(--theme-ui-colors-box-shadow-dark),
+        -6px -6px 12px var(--theme-ui-colors-box-shadow-light);
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*Cookie Consent Begin*/
 .cookie-mb {
     transition: .5s;
     font-size: 1rem;
@@ -21,7 +65,6 @@
 /*Cookie Consent End*/
 
 /* start navigation */
-
 .navbar {
     transition: .5s;
     background: var(--theme-ui-colors-background);
@@ -183,7 +226,6 @@
 /* end navigation */
 
 /* start CTA buttons */
-
 .cta {
     cursor: pointer;
     padding: 10px 0;
@@ -211,7 +253,6 @@
 /* end CTA buttons */
 
 /* start toggle */
-
 .toggle-label-mb {
     margin: 10px 0 0 15px;
     cursor: pointer;
@@ -230,7 +271,7 @@
     isolation: isolate;
     position: relative;
     height: 20px;
-    width: 40px;
+    width: 39px;
     border: 1px solid var(--theme-ui-colors-text);
     border-radius: 15px;
     overflow: hidden;
@@ -260,10 +301,26 @@
     transform: translate3d(25%, 0, 0);
 }
 
+.toggle-label-mb .indicator2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    background: var(--theme-ui-colors-background);
+    border-radius: 15px;
+    transform: translate3d(7%, -20%, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+    z-index: 1
+}
+
+.toggle-label-mb .toggle-state:checked~.indicator2 {
+    opacity: 0;
+}
+
 /* end toggle */
 
 /* start animations */
-
 @keyframes fadeIn {
     0% {
         top: -100%;
