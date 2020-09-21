@@ -1,3 +1,7 @@
+*:focus {
+    outline: none;
+}
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -8,6 +12,7 @@ body {
 
 
 h1 {
+    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     font-size: 2rem;
 }
@@ -17,7 +22,6 @@ h2 {
     margin-top: 2rem;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -41,6 +45,11 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--theme-ui-colors-highlight);
+    text-decoration: none;
+}
+
 p {
     margin: 0;
 }
@@ -52,3 +61,33 @@ p+p {
 .row {
     margin: 0;
 }
+
+.button {
+    padding: .2rem 1rem;
+    border-radius: 25px;
+    background: var(--theme-ui-colors-background);
+    color: var(--theme-ui-colors-text);
+    box-shadow: 4px 4px 8px var(--theme-ui-colors-box-shadow-dark),
+        -4px -4px 8px var(--theme-ui-colors-box-shadow-light);
+    margin: 10px;
+    transition: background .5s, box-shadow .5s, color .5s;
+    border: none;
+}
+
+.button:hover {
+    transition: box-shadow .5s;
+    box-shadow: 3px 3px 6px var(--theme-ui-colors-box-shadow-dark),
+        -3px -3px 6px var(--theme-ui-colors-box-shadow-light);
+}
+
+.purple {
+    color: var(--theme-ui-colors-highlight);
+}
+
+/* styles for dialogflow messenger start */
+df-messenger {
+    --df-messenger-button-titlebar-color: #7f5af0;
+    --df-messenger-button-titlebar-font-color: #fffffe;
+}
+
+/* styles for dialogflow messenger end */

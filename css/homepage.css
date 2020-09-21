@@ -244,19 +244,16 @@
     border-radius: .25rem;
 }
 
-#meDiv {
+#meDiv,
+#contactDiv {
     padding: 1.5rem;
 }
 
-/*mobile css begins */
-/* styles for dialogflow messenger start */
-df-messenger {
-    --df-messenger-button-titlebar-color: #7f5af0;
-    --df-messenger-button-titlebar-font-color: #fffffe;
+#contactDiv .form-all {
+    padding: 0 10rem;
 }
 
-/* styles for dialogflow messenger end */
-
+/*mobile css begins */
 /* 404 page styles begin */
 .not-found {
     display: flex;
@@ -270,10 +267,6 @@ df-messenger {
 /* 404 page styles end */
 
 /* load div */
-#load h2 {
-    margin-top: 1.5rem;
-}
-
 #load .img-dk {
     max-width: 300px;
     border-top-left-radius: 25px;

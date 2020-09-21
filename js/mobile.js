@@ -1,6 +1,6 @@
-const $navLinksMb = $('.nav-link-mb');
-const $stickyNavbar = $('.fixed-top');
-const $ctaBtn = $('.cta');
+const $navLinksMb = jQuery('.nav-link-mb');
+const $stickyNavbar = jQuery('.fixed-top');
+const $ctaBtn = jQuery('.cta');
 
 let oldScrollPosition = 0;
 let isScrollingUp = false;
@@ -21,15 +21,15 @@ window.addEventListener('scroll', () => {
   }
 });
 
-$(document).ready(function() {
-  $($ctaBtn).on('click', function() {
-    window.location.href = `/${$(this).attr('name')}`;
+jQuery(document).ready(function() {
+  jQuery($ctaBtn).on('click', function() {
+    window.location.href = `/${jQuery(this).attr('name')}`;
   });
 
-  $($navLinksMb).on('click', function() {
-    if ($(this).attr('id') === 'resume') {
+  jQuery($navLinksMb).on('click', function() {
+    if (jQuery(this).attr('id') === 'resume') {
       return;
     }
-    window.location.href = `/${$(this).attr('id')}`;
+    window.location.href = `/${jQuery(this).attr('id')}`;
   });
 });

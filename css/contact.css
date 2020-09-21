@@ -1,0 +1,70 @@
+/* jot form */
+.jotform-form .form-section {
+    padding: 0;
+    text-align: left;
+}
+
+.jotform-form .form-section li {
+    list-style-type: none;
+}
+
+.jotform-form .form-section li+li {
+    margin-top: 1rem;
+}
+
+.jotform-form .form-section input,
+.jotform-form .form-section textarea {
+    color: var(--theme-ui-colors-text);
+    padding: .4rem 1rem;
+    width: 100%;
+    border-radius: 25px;
+    background: var(--theme-ui-colors-background);
+    box-shadow: 4px 4px 8px var(--theme-ui-colors-box-shadow-dark),
+        -4px -4px 8px var(--theme-ui-colors-box-shadow-light);
+    border: none;
+    transition: background .5s, box-shadow .5s;
+}
+
+.jotform-form .form-section input:active,
+.jotform-form .form-section textarea:active {
+    outline: 0;
+    border: 0;
+}
+
+.jotform-form .form-section input:focus,
+.jotform-form .form-section textarea:focus {
+    box-shadow: inset 3px 3px 6px var(--theme-ui-colors-box-shadow-dark),
+        inset -3px -3px 6px var(--theme-ui-colors-box-shadow-light);
+}
+
+.jotform-form .form-section .form-required {
+    color: #FF4E5D;
+}
+
+.form-line-error div.form-error-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FF4E5D;
+    color: #fff;
+    padding: 5px;
+    margin-top: .8rem;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+li.form-line-error .form-error-message img {
+    margin: 0 8px 0 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.form-line-error div.form-error-message .form-error-arrow {
+    border-bottom-color: #FF4E5D;
+}
+
+.form-error-arrow-inner {
+    display: none;
+}
+
+/* jot form ends */

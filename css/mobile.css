@@ -27,6 +27,7 @@
     transition: .5s;
     padding: 20px;
     padding-top: 90px;
+    transition: background .5s, box-shadow .5s;
 }
 
 .card {

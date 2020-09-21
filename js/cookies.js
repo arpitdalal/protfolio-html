@@ -1,9 +1,9 @@
-const $main = $('.main');
-const $toggleThemeSwitch = $('.toggleState');
-const $toggleThemeLabel = $('.toggle-label');
-const $toggleTitle = $('#toggle-title');
-const $cookieConsent = $('.cookie-consent');
-const $cookieOkayBtn = $('.cookie-okay');
+const $main = jQuery('.main');
+const $toggleThemeSwitch = jQuery('.toggleState');
+const $toggleThemeLabel = jQuery('.toggle-label');
+const $toggleTitle = jQuery('#toggle-title');
+const $cookieConsent = jQuery('.cookie-consent');
+const $cookieOkayBtn = jQuery('.cookie-okay');
 
 const getCookieValue = (name) => {
   const value = `; ${document.cookie}`;
@@ -15,7 +15,7 @@ const setTheme = (mode) => {
   $toggleThemeSwitch.prop('checked', mode == 'dark' ? false : true);
   $toggleThemeLabel.attr('title', `Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
   $toggleTitle.text(`Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
-  document.cookie = `theme=${mode}; expires=Wed, 14 Jun 3017 07:00:00 GMT`;
+  document.cookie = `theme=${mode}; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT`;
 };
 
 $cookieOkayBtn.on('click', () => {
@@ -32,9 +32,9 @@ $toggleThemeSwitch.click(() => {
   }
 });
 
-$(document).ready(function() {
-  $('.collapse-button').on('click', () => {
-    $('.animated-icon').toggleClass('open');
+jQuery(document).ready(function() {
+  jQuery('.collapse-button').on('click', () => {
+    jQuery('.animated-icon').toggleClass('open');
   });
 
   if (!getCookieValue('consent')) {
