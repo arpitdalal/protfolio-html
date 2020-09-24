@@ -8,6 +8,7 @@ body {
     padding: 0;
     overflow-x: hidden !important;
     font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 
@@ -15,6 +16,11 @@ h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     font-size: 2rem;
+    line-height: 1.5;
+}
+
+h1::first-letter {
+    color: var(--ad-highlight);
 }
 
 h2 {
@@ -22,31 +28,46 @@ h2 {
     margin-top: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: 'Libre Baskerville', serif;
     color: currentColor;
+    line-height: 1.5;
 }
 
 a {
-    color: var(--theme-ui-colors-text);
+    color: var(--ad-text);
     text-decoration: none;
 }
 
 a:active {
-    color: var(--theme-ui-colors-text);
+    color: var(--ad-text);
     text-decoration: none;
 }
 
 a:visited {
-    color: var(--theme-ui-colors-text);
+    color: var(--ad-text);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--theme-ui-colors-highlight);
+    color: var(--ad-highlight);
     text-decoration: none;
 }
 
@@ -62,13 +83,21 @@ p+p {
     margin: 0;
 }
 
+.main-div {
+    padding-bottom: 3rem;
+}
+
+.card-body {
+    width: 100%;
+}
+
 .button {
     padding: .2rem 1rem;
     border-radius: 25px;
-    background: var(--theme-ui-colors-background);
-    color: var(--theme-ui-colors-text);
-    box-shadow: 4px 4px 8px var(--theme-ui-colors-box-shadow-dark),
-        -4px -4px 8px var(--theme-ui-colors-box-shadow-light);
+    background: var(--ad-background);
+    color: var(--ad-text);
+    box-shadow: 4px 4px 8px var(--ad-box-shadow-dark),
+        -4px -4px 8px var(--ad-box-shadow-light);
     margin: 10px;
     transition: background .5s, box-shadow .5s, color .5s;
     border: none;
@@ -76,13 +105,77 @@ p+p {
 
 .button:hover {
     transition: box-shadow .5s;
-    box-shadow: 3px 3px 6px var(--theme-ui-colors-box-shadow-dark),
-        -3px -3px 6px var(--theme-ui-colors-box-shadow-light);
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
 }
 
 .purple {
-    color: var(--theme-ui-colors-highlight);
+    color: var(--ad-highlight);
 }
+
+.social-links {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-links a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-link:hover .svg-bg {
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
+}
+
+.social-link:active .svg-bg {
+    box-shadow: inset 2px 2px 4px var(--ad-box-shadow-dark),
+        inset -2px -2px 4px var(--ad-box-shadow-light);
+}
+
+.svg-bg {
+    transition: .5s;
+    background: var(--ad-background);
+    box-shadow: 6px 6px 12px var(--ad-box-shadow-dark),
+        -4px -4px 12px var(--ad-box-shadow-light);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+/* start CTA buttons */
+a.cta {
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 25px;
+    background: var(--ad-background);
+    color: var(--ad-text);
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
+    margin: 10px;
+    transition: background .5s, box-shadow .5s;
+}
+
+a.cta.cta-primary {
+    background: var(--ad-highlight);
+}
+
+a.cta {
+    transition: color .5s;
+}
+
+a.cta.cta-primary {
+    color: var(--ad-background)
+}
+
+/* end CTA buttons */
 
 /* styles for dialogflow messenger start */
 df-messenger {

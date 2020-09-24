@@ -14,13 +14,13 @@
 
 .jotform-form .form-section input,
 .jotform-form .form-section textarea {
-    color: var(--theme-ui-colors-text);
+    color: var(--ad-text);
     padding: .4rem 1rem;
     width: 100%;
     border-radius: 25px;
-    background: var(--theme-ui-colors-background);
-    box-shadow: 4px 4px 8px var(--theme-ui-colors-box-shadow-dark),
-        -4px -4px 8px var(--theme-ui-colors-box-shadow-light);
+    background: var(--ad-background);
+    box-shadow: 4px 4px 8px var(--ad-box-shadow-dark),
+        -4px -4px 8px var(--ad-box-shadow-light);
     border: none;
     transition: background .5s, box-shadow .5s;
 }
@@ -33,8 +33,8 @@
 
 .jotform-form .form-section input:focus,
 .jotform-form .form-section textarea:focus {
-    box-shadow: inset 3px 3px 6px var(--theme-ui-colors-box-shadow-dark),
-        inset -3px -3px 6px var(--theme-ui-colors-box-shadow-light);
+    box-shadow: inset 3px 3px 6px var(--ad-box-shadow-dark),
+        inset -3px -3px 6px var(--ad-box-shadow-light);
 }
 
 .jotform-form .form-section .form-required {
@@ -68,3 +68,7 @@ li.form-line-error .form-error-message img {
 }
 
 /* jot form ends */
+
+#contactDiv .social-links {
+    max-width: 200px;
+}

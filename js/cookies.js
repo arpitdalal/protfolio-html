@@ -15,12 +15,12 @@ const setTheme = (mode) => {
   $toggleThemeSwitch.prop('checked', mode == 'dark' ? false : true);
   $toggleThemeLabel.attr('title', `Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
   $toggleTitle.text(`Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
-  document.cookie = `theme=${mode}; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT`;
+  document.cookie = `theme=${mode}; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT; SameSite=Strict;`;
 };
 
 $cookieOkayBtn.on('click', () => {
   $cookieConsent.css('display', 'none');
-  document.cookie = 'consent=yes';
+  document.cookie = 'consent=yes; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT; SameSite=Strict;';
 });
 
 $toggleThemeSwitch.click(() => {

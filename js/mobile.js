@@ -1,6 +1,5 @@
 const $navLinksMb = jQuery('.nav-link-mb');
 const $stickyNavbar = jQuery('.fixed-top');
-const $ctaBtn = jQuery('.cta');
 
 let oldScrollPosition = 0;
 let isScrollingUp = false;
@@ -22,10 +21,6 @@ window.addEventListener('scroll', () => {
 });
 
 jQuery(document).ready(function() {
-  jQuery($ctaBtn).on('click', function() {
-    window.location.href = `/${jQuery(this).attr('name')}`;
-  });
-
   jQuery($navLinksMb).on('click', function() {
     if (jQuery(this).attr('id') === 'resume') {
       return;
