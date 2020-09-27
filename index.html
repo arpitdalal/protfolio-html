@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="PORTFOLIO, WEB DEVELOPER, JAVASCRIPT, ARPIT, DALAL, ARPIT DALAL, DEVELOPER, WEBSITE, NODEJS, REACT">
+    <meta name="color-scheme" content="dark light">
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -67,10 +68,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <!-- custom css -->
-    <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="/css/utilities.css">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="" id="lightDarkSheet">
 </head>
 
 <body>
@@ -81,86 +83,91 @@
 
     <div class="main">
         <div class="mobile d-block d-lg-none d-xl-none">
-            <nav class="navbar fixed-top navbar-expand-lg">
-                <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
-                    Dalal</a>
-
-                <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <div class="animated-icon"><span></span><span></span><span></span></div>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-                        <li class="nav-link-mb" id="me">
-                            <a class="nav-item" href="/me">Who am I?</a>
-                        </li>
-                        <li class="nav-link-mb" id="projects">
-                            <a class="nav-item" href="/projects">My work</a>
-                        </li>
-                        </li>
-                        <li class="nav-link-mb" id="contact">
-                            <a class="nav-item" href="/contact">Get in touch</a>
-                        </li>
-                        <li class="nav-link-mb" id="resume">
-                            <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-                    <label class="toggle-label toggle-label-mb" title="">
-                        <span id="toggle-title"></span>
-                        <div class="toggle">
-                            <input type="checkbox" class="toggle-state toggleState" />
-                            <div class="indicator2"></div>
-                            <div class="indicator"></div>
-                        </div>
-                    </label>
-                </div>
-            </nav>
-            <div class="cookie-consent cookie-mb mb-2">
-                We use cookies for better user experience. <button class="cookie-okay">Okay</button>
-            </div>
-
-            <div class="card mx-auto">
-                <a href="/"><img src="images/logo.png" class="anim card-img-top" alt="Arpit Dalal"></a>
-                <div class="card-body">
-                    <a href="/" class="head">
-                        <h1 class="anim card-title">Arpit Dalal</h1>
+            <div class="d-flex flex-column container-div">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="/"><img src="./images/logo.png" alt="Arpit Dalal" class="logo" />
+                        Arpit Dalal
                     </a>
-                    <h5 class="anim card-sub-title mt-2">Web developer</h5>
-                    <div class="anim card-text">
-                        <p>Hi👋 my name is Arpit Dalal and I am a web developer. I have extensive and applied experience
-                            in building web applications using different technologies.</p>
+
+                    <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon"><span></span><span></span><span></span></div>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="horizontal">
+                            <li class="nav-link-mb" id="me">
+                                <a class="nav-item" href="/me">Who am I?</a>
+                            </li>
+                            <li class="nav-link-mb" id="projects">
+                                <a class="nav-item" href="/projects">My work</a>
+                            </li>
+                            </li>
+                            <li class="nav-link-mb" id="contact">
+                                <a class="nav-item" href="/contact">Get in touch</a>
+                            </li>
+                            <li class="nav-link-mb" id="resume">
+                                <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                        <label class="toggle-label toggle-label-mb" title="">
+                            <span id="toggle-title"></span>
+                            <div class="toggle">
+                                <input type="checkbox" class="toggle-state toggleState" />
+                                <div class="indicator2"></div>
+                                <div class="indicator"></div>
+                            </div>
+                        </label>
                     </div>
-                    <div class="anim social-links">
-                        <a href="https://github.com/arpitdalal" class="social-link github" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </span>
-                            Github
+                </nav>
+                <div class="cookie-consent cookie-mb pl-3 pr-2 mt-2">
+                    This site uses cookies to offer better experience <button class="cookie-okay">Okay</button>
+                </div>
+
+                <div class="card mx-auto mt-3">
+                    <a href="/"><img src="images/logo.png" class="anim card-img-top" alt="Arpit Dalal"></a>
+                    <div class="card-body">
+                        <a href="/" class="head">
+                            <h1 class="anim card-title">Arpit Dalal</h1>
                         </a>
-                        <a href="https://linkedin.com/in/arpitdalal/" class="social-link linkedin" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </span>
-                            LinkedIn
-                        </a>
-                    </div>
-                    <div class="d-flex flex-column mt-2">
-                        <a href="/projects" class="cta cta-primary anim">My work</a>
-                        <a href="/me" class="cta cta-secondary anim">Who am I?</a>
+                        <h5 class="anim card-sub-title mt-2">Web developer</h5>
+                        <div class="anim card-text">
+                            <p>Hi👋 my name is Arpit Dalal and I am a web developer. I have extensive and applied
+                                experience
+                                in building web applications using different technologies.</p>
+                        </div>
+                        <div class="anim social-links">
+                            <a href="https://github.com/arpitdalal" class="social-link github" target="_blank">
+                                <span class="svg-bg">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </span>
+                                Github
+                            </a>
+                            <a href="https://linkedin.com/in/arpitdalal/" class="social-link linkedin" target="_blank">
+                                <span class="svg-bg">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </span>
+                                LinkedIn
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column mt-2">
+                            <a href="/projects" class="cta cta-primary anim">My work</a>
+                            <a href="/me" class="cta cta-secondary anim">Who am I?</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -169,7 +176,7 @@
         <div class="desktop d-none d-lg-block d-xl-block">
             <div class="row">
                 <div class="cookie-consent cookie-dk">
-                    We use cookies for better user experience. <button class="cookie-okay">Okay</button>
+                    This site uses cookies to offer better experience <button class="cookie-okay">Okay</button>
                 </div>
                 <div class="col-lg-3 left-div">
                     <div class="card mx-auto" id="main-card">
@@ -250,9 +257,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/cookies.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
     <script type="text/javascript" src="/js/mobile.js"></script>
-    <script type="text/javascript" src="/js/cookies.js"></script>
 </body>
 
 </html>

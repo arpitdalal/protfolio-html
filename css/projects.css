@@ -1,5 +1,9 @@
+a:hover h3 {
+    color: var(--ad-text);
+}
+
 .card img {
-    box-shadow: 6px 6px 12px rgba(127, 90, 240, .3);
+    box-shadow: 3px 3px 6px rgba(127, 90, 240, .3);
 }
 
 /*MEDIA QUERIES*/

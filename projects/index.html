@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="PORTFOLIO, WEB DEVELOPER, JAVASCRIPT, ARPIT, DALAL, ARPIT DALAL, DEVELOPER, WEBSITE, NODEJS, REACT">
+    <meta name="color-scheme" content="dark light">
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -68,6 +69,7 @@
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="" id="lightDarkSheet">
 </head>
 
 <body>
@@ -77,82 +79,84 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="main">
+        <div class="d-flex flex-column container-div">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
+                    Dalal</a>
 
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
-                Dalal</a>
+                <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
+                </button>
 
-            <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div class="animated-icon"><span></span><span></span><span></span></div>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-                    <li class="nav-link-mb" id="me">
-                        <a class="nav-item" href="/me">Who am I?</a>
-                    </li>
-                    <li class="nav-link-mb active" id="projects">
-                        <a class="nav-item" href="/projects">My work</a>
-                    </li>
-                    </li>
-                    <li class="nav-link-mb" id="contact">
-                        <a class="nav-item" href="/contact">Get in touch</a>
-                    </li>
-                    <li class="nav-link-mb" id="resume">
-                        <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-                <label class="toggle-label toggle-label-mb" title="">
-                    <span id="toggle-title"></span>
-                    <div class="toggle">
-                        <input type="checkbox" class="toggle-state toggleState" />
-                        <div class="indicator2"></div>
-                        <div class="indicator"></div>
-                    </div>
-                </label>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                        <li class="nav-link-mb" id="me">
+                            <a class="nav-item" href="/me">Who am I?</a>
+                        </li>
+                        <li class="nav-link-mb active" id="projects">
+                            <a class="nav-item" href="/projects">My work</a>
+                        </li>
+                        </li>
+                        <li class="nav-link-mb" id="contact">
+                            <a class="nav-item" href="/contact">Get in touch</a>
+                        </li>
+                        <li class="nav-link-mb" id="resume">
+                            <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                    <label class="toggle-label toggle-label-mb" title="">
+                        <span id="toggle-title"></span>
+                        <div class="toggle">
+                            <input type="checkbox" class="toggle-state toggleState" />
+                            <div class="indicator2"></div>
+                            <div class="indicator"></div>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+            <div class="cookie-consent cookie-mb pl-3 pr-2 mt-2">
+                This site uses cookies to offer better experience <button class="cookie-okay">Okay</button>
             </div>
-        </nav>
-        <div class="cookie-consent cookie-mb">
-            We use cookies for better user experience. <button class="cookie-okay">Okay</button>
-        </div>
 
-        <div class="card mx-auto">
-            <div class="card-body">
-                <div id="projectsDiv" class="main-div">
-                    <h1 class="anim">My work</h1>
-                    <h5 class="mt-3 anim">Here's a glimpse of my projects.</h5>
-                    <div class="projects my-5">
-                        <div class="row">
-                            <div id="cheapresume" class="col anim">
-                                <a href="/projects/cheapresume">
-                                    <h3>CheapResume</h3>
-                                </a>
-                                <div class="mx-auto">
-                                    <div class="project-body">
-                                        <a href="/projects/cheapresume"><img class="img-fluid rounded"
-                                                src="/images/projects/cheapresume.net/cheapresume.net-2.gif"
-                                                alt="cheapresume.net dif"></a>
-                                        <h6 class="mt-3">A resume/cover-letter building service provider.</h6>
-                                        <div class="d-flex flex-column flex-lg-row justify-content-between">
-                                            <a class="cta cta-primary" href="/projects/cheapresume">Go to project
-                                                details</a>
-                                            <a class="cta cta-secondary" href="https://cheapresume.net"
-                                                target="_blank">Go to Site</a>
+            <div class="card mx-auto mt-3">
+                <div class="card-body">
+                    <div id="projectsDiv" class="main-div">
+                        <h1 class="anim">My work</h1>
+                        <h5 class="mt-3 anim">Here's a glimpse of my projects.</h5>
+                        <div class="projects my-5">
+                            <div class="row">
+                                <div id="cheapresume" class="col anim">
+                                    <a href="/projects/cheapresume">
+                                        <h3>CheapResume</h3>
+                                    </a>
+                                    <div class="mx-auto">
+                                        <div class="project-body">
+                                            <a href="/projects/cheapresume"><img class="img-fluid rounded"
+                                                    src="/images/projects/cheapresume.net/cheapresume.net-2.gif"
+                                                    alt="cheapresume.net dif"></a>
+                                            <h6 class="mt-3">A resume/cover-letter building service provider.</h6>
+                                            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                                                <a class="cta cta-primary" href="/projects/cheapresume">Go to
+                                                    project
+                                                    details</a>
+                                                <a class="cta cta-secondary" href="https://cheapresume.net"
+                                                    target="_blank">Go to Site</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column mt-2 cta-div">
-                        <a href="/contact" class="cta cta-primary anim">Get in touch</a>
-                        <a href="/pdfs/resume.pdf" class="cta cta-secondary anim">My resume</a>
+                        <div class="d-flex flex-column mt-2 cta-div">
+                            <a href="/contact" class="cta cta-primary anim">Get in touch</a>
+                            <a href="/pdfs/resume.pdf" class="cta cta-secondary anim">My resume</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 

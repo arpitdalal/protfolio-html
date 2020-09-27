@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="PORTFOLIO, WEB DEVELOPER, JAVASCRIPT, ARPIT, DALAL, ARPIT DALAL, DEVELOPER, WEBSITE, NODEJS, REACT">
+    <meta name="color-scheme" content="dark light">
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -62,9 +63,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="" id="lightDarkSheet">
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/mobile.css">
 </head>
@@ -76,118 +77,128 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="main">
+        <div class="d-flex flex-column container-div">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
+                    Dalal</a>
 
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
-                Dalal</a>
+                <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
+                </button>
 
-            <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div class="animated-icon"><span></span><span></span><span></span></div>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-                    <li class="nav-link-mb active" id="me">
-                        <a class="nav-item" href="/me">Who am I?</a>
-                    </li>
-                    <li class="nav-link-mb" id="projects">
-                        <a class="nav-item" href="/projects">My work</a>
-                    </li>
-                    </li>
-                    <li class="nav-link-mb" id="contact">
-                        <a class="nav-item" href="/contact">Get in touch</a>
-                    </li>
-                    <li class="nav-link-mb" id="resume">
-                        <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-                <label class="toggle-label toggle-label-mb" title="">
-                    <span id="toggle-title"></span>
-                    <div class="toggle">
-                        <input type="checkbox" class="toggle-state toggleState" />
-                        <div class="indicator2"></div>
-                        <div class="indicator"></div>
-                    </div>
-                </label>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                        <li class="nav-link-mb active" id="me">
+                            <a class="nav-item" href="/me">Who am I?</a>
+                        </li>
+                        <li class="nav-link-mb" id="projects">
+                            <a class="nav-item" href="/projects">My work</a>
+                        </li>
+                        </li>
+                        <li class="nav-link-mb" id="contact">
+                            <a class="nav-item" href="/contact">Get in touch</a>
+                        </li>
+                        <li class="nav-link-mb" id="resume">
+                            <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                    <label class="toggle-label toggle-label-mb" title="">
+                        <span id="toggle-title"></span>
+                        <div class="toggle">
+                            <input type="checkbox" class="toggle-state toggleState" />
+                            <div class="indicator2"></div>
+                            <div class="indicator"></div>
+                        </div>
+                    </label>
+                </div>
+            </nav>
+            <div class="cookie-consent cookie-mb pl-3 pr-2 mt-2">
+                This site uses cookies to offer better experience <button class="cookie-okay">Okay</button>
             </div>
-        </nav>
-        <div class="cookie-consent cookie-mb">
-            We use cookies for better user experience. <button class="cookie-okay">Okay</button>
-        </div>
 
-        <div class="card mx-auto">
-            <img class="img-fluid card-img-top d-lg-none d-xl-none img-mob anim" src="/images/arpit-thumbnail.png" />
-            <div class="card-body">
-                <div id="meDiv" class="main-div">
-                    <div class="about-me text-left">
-                        <img class="img-fluid d-none d-lg-block d-xl-block float-left img-dk anim"
-                            src="/images/arpit-thumbnail.png" />
-                        <h1 class="text-center anim">Who am I?</h1>
-                        <div class="anim">
-                            <p>Hello👋 my name is Arpit Dalal.</p>
-                            <p>A developer building reliable web products.</p>
-                            <p>Born and raised in Vadodara city of Gujarat, India. Currently, residing in Charlottetown,
-                                PE,
-                                Canada.</p>
-                            <p>A professional web developer with over 3 years of experience in designing, developing,
-                                and
-                                maintaining web applications.</p>
-                            <p>Music lover, Gamer (LOL), an Astrophile.</p>
-                            <p>An unusual fact about me is that I love to follow rules.</p>
+            <div class="card mx-auto mt-3">
+                <img class="img-fluid card-img-top d-lg-none d-xl-none img-mob anim"
+                    src="/images/arpit-thumbnail.jpg" />
+                <div class="card-body">
+                    <div id="meDiv" class="main-div">
+                        <div class="about-me text-left">
+                            <img class="img-fluid d-none d-lg-block d-xl-block float-left img-dk anim"
+                                src="/images/arpit-thumbnail.jpg" />
+                            <h1 class="text-center anim">Who am I?</h1>
+                            <div class="anim">
+                                <p>Hello👋 my name is Arpit Dalal.</p>
+                                <p>A developer building reliable web products.</p>
+                                <p>Born and raised in Vadodara city of Gujarat, India. Currently, residing in
+                                    Charlottetown,
+                                    PE,
+                                    Canada.</p>
+                                <p>A professional web developer with over 3 years of experience in designing,
+                                    developing,
+                                    and
+                                    maintaining web applications.</p>
+                                <p>Music lover, Gamer (LOL), an Astrophile.</p>
+                                <p>An unusual fact about me is that I love to follow rules.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="my-goals text-left">
-                        <h2 class="text-center anim">My Goals</h2>
-                        <div class="anim">
-                            <p>To help businesses to make a significant web presence by building reliable, scalable, and
-                                user-centric web products.</p>
-                            <p>Develop products that user enjoys interacting with and is accessible to everyone and can
-                                attract attention to the business.</p>
+                        <div class="my-goals text-left">
+                            <h2 class="text-center anim">My Goals</h2>
+                            <div class="anim">
+                                <p>To help businesses to make a significant web presence by building reliable, scalable,
+                                    and
+                                    user-centric web products.</p>
+                                <p>Develop products that user enjoys interacting with and is accessible to everyone and
+                                    can
+                                    attract attention to the business.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="my-journey text-left">
-                        <h2 class="text-center anim">My Journey</h2>
-                        <div class="anim">
-                            <p>I was 13 when I first saw the code of a game named Tetris.</p>
-                            <p>I was fascinated by how a few lines of code that I could not even understand can do so
-                                much
-                                visually and give such a remarkable output.</p>
-                            <p>Since then I was curious to know how to write code that can give such an amazing
-                                experience
-                                to the world.</p>
-                            <p>So, I learned Java and built my version of the Tetris game.</p>
-                            <p>Soon I learned that I want to be a part of the web dev community and started learning web
-                                technologies including PHP, HTML, CSS, JavaScript, etc.</p>
+                        <div class="my-journey text-left">
+                            <h2 class="text-center anim">My Journey</h2>
+                            <div class="anim">
+                                <p>I was 13 when I first saw the code of a game named Tetris.</p>
+                                <p>I was fascinated by how a few lines of code that I could not even understand can do
+                                    so
+                                    much
+                                    visually and give such a remarkable output.</p>
+                                <p>Since then I was curious to know how to write code that can give such an amazing
+                                    experience
+                                    to the world.</p>
+                                <p>So, I learned Java and built my version of the Tetris game.</p>
+                                <p>Soon I learned that I want to be a part of the web dev community and started learning
+                                    web
+                                    technologies including PHP, HTML, CSS, JavaScript, etc.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="my-today text-left">
-                        <h2 class="text-center anim">Where do I stand today?</h2>
-                        <div class="anim">
-                            <p>I have hands-on experience with 2 full stacks including LAMP and MERN to develop a full
-                                scalable web application with designing the architecture of the application and the
-                                database
-                                that supports the application, developing and testing every part of the application,
-                                deploying it to the production based environment, and maintaining it after the
-                                deployment is
-                                successful.</p>
-                            <p>Moreover, I have built web applications using technologies like WordPress, Laravel,
-                                Woocommerce and even JAMstack.</p>
-                            <p>I have created designs using CSS-frameworks like Bootstrap, Semantic-UI, Materialize to
-                                name
-                                a few.</p>
-                            <p>And I also know how to facilitate controlling the versions of the application using Git.
-                            </p>
+                        <div class="my-today text-left">
+                            <h2 class="text-center anim">Where do I stand today?</h2>
+                            <div class="anim">
+                                <p>I have hands-on experience with 2 full stacks including LAMP and MERN to develop a
+                                    full
+                                    scalable web application with designing the architecture of the application and the
+                                    database
+                                    that supports the application, developing and testing every part of the application,
+                                    deploying it to the production based environment, and maintaining it after the
+                                    deployment is
+                                    successful.</p>
+                                <p>Moreover, I have built web applications using technologies like WordPress, Laravel,
+                                    Woocommerce and even JAMstack.</p>
+                                <p>I have created designs using CSS-frameworks like Bootstrap, Semantic-UI, Materialize
+                                    to
+                                    name
+                                    a few.</p>
+                                <p>And I also know how to facilitate controlling the versions of the application using
+                                    Git.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column mt-2 cta-div">
-                        <a href="/projects" class="cta cta-primary anim">My work</a>
-                        <a href="/pdfs/resume.pdf" class="cta cta-secondary anim">My resume</a>
+                        <div class="d-flex flex-column mt-2 cta-div">
+                            <a href="/projects" class="cta cta-primary anim">My work</a>
+                            <a href="/pdfs/resume.pdf" class="cta cta-secondary anim">My resume</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

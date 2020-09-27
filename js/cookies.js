@@ -39,6 +39,8 @@ jQuery(document).ready(function() {
 
   if (!getCookieValue('consent')) {
     $cookieConsent.css('display', 'block');
+  } else {
+    $cookieConsent.css('display', 'none');
   }
 
   if (getCookieValue('theme')) {

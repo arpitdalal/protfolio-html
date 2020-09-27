@@ -1,14 +1,15 @@
-.light-mode {
-    --ad-highlight: #7f5af0 !important;
-    --ad-text: #0d0d0d !important;
-    --ad-background: #eff0f3 !important;
-    --ad-card-background: #eff0f3 !important;
-    --ad-box-shadow-dark: #cbcccf !important;
-    --ad-box-shadow-light: #ffffff !important;
-    --ad-highlight-text: #2a2a2a !important;
-    --ad-icon: #7f5af0 !important;
-    --ad-icon-background: #eff0f3 !important;
-    --ad-card-shadow: 0 4px 8px 0 rgb(179, 179, 179), 0 6px 20px 0 rgb(179, 179, 179) !important;
+.main.light-mode {
+    --ad-highlight: #7f5af0;
+    --ad-text: #0d0d0d;
+    --ad-background: #eff0f3;
+    --ad-card-background: #eff0f3;
+    --ad-box-shadow-dark: #cbcccf;
+    --ad-box-shadow-light: #ffffff;
+    --ad-highlight-text: #2a2a2a;
+    --ad-icon: #7f5af0;
+    --ad-icon-background: #eff0f3;
+    --ad-card-shadow: 0 4px 8px 0 rgb(179, 179, 179),
+        0 6px 20px 0 rgb(179, 179, 179);
 }
 
 .main {
@@ -25,15 +26,19 @@
     background: var(--ad-background);
     color: var(--ad-text);
     transition: .5s;
-    padding: 20px;
-    padding-top: 90px;
     transition: background .5s, box-shadow .5s;
+}
+
+.container-div {
+    height: 100vh;
+    padding-bottom: 20px;
 }
 
 .card {
     border: none;
     transition: .5s;
-    height: 100vh;
+    margin: 0;
+    height: 85vh;
     text-align: center;
     background: var(--ad-background);
     border-radius: 25px;
@@ -42,6 +47,7 @@
     align-items: center;
     overflow-y: auto;
     overflow-x: hidden;
+    width: 90%;
 }
 
 /*Cookie Consent Begin*/
@@ -50,7 +56,6 @@
     font-size: 1rem;
     color: currentColor;
     display: none;
-    margin-bottom: 5px;
 }
 
 .cookie-mb .cookie-okay {
@@ -61,6 +66,7 @@
     color: currentColor;
     border: none;
     transition: .5s;
+    padding: 1px 10px;
 }
 
 /*Cookie Consent End*/
@@ -70,17 +76,6 @@
     transition: .5s;
     background: var(--ad-background);
     box-shadow: 6px 6px 12px var(--ad-box-shadow-light);
-}
-
-.fixed-top {
-    animation: fadeIn .2s;
-    z-index: 3;
-}
-
-.fixed-top.invisible {
-    position: fixed;
-    top: -100%;
-    animation: fadeOut 2s;
 }
 
 .navbar-brand {

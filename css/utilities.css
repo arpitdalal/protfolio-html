@@ -9,6 +9,7 @@ body {
     overflow-x: hidden !important;
     font-size: 1.1rem;
     line-height: 1.5;
+    overflow-y: hidden;
 }
 
 

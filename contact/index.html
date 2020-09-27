@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="PORTFOLIO, WEB DEVELOPER, JAVASCRIPT, ARPIT, DALAL, ARPIT DALAL, DEVELOPER, WEBSITE, NODEJS, REACT">
+    <meta name="color-scheme" content="dark light">
 
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -68,6 +69,7 @@
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/mobile.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" type="text/html" href="" id="lightDarkSheet">
 </head>
 
 <body>
@@ -77,164 +79,166 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="main">
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
-                Dalal</a>
+        <div class="d-flex flex-column container-div">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/"><img src="/images/logo.png" alt="Arpit Dalal" class="logo" /> Arpit
+                    Dalal</a>
 
-            <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <div class="animated-icon"><span></span><span></span><span></span></div>
-            </button>
+                <button class="navbar-toggler collapse-button" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
-                    <li class="nav-link-mb" id="me">
-                        <a class="nav-item" href="/me">Who am I?</a>
-                    </li>
-                    <li class="nav-link-mb" id="projects">
-                        <a class="nav-item" href="/projects">My work</a>
-                    </li>
-                    </li>
-                    <li class="nav-link-mb active" id="contact">
-                        <a class="nav-item" href="/contact">Get in touch</a>
-                    </li>
-                    <li class="nav-link-mb" id="resume">
-                        <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-                <label class="toggle-label toggle-label-mb" title="">
-                    <span id="toggle-title"></span>
-                    <div class="toggle">
-                        <input type="checkbox" class="toggle-state toggleState" />
-                        <div class="indicator2"></div>
-                        <div class="indicator"></div>
-                    </div>
-                </label>
-            </div>
-        </nav>
-
-        <div class="cookie-consent cookie-mb">
-            We use cookies for better user experience. <button class="cookie-okay">Okay</button>
-        </div>
-        <div class="card mx-auto">
-            <div class="card-body">
-                <div id="contactDiv" class="main-div">
-                    <h1 class="anim">Get in touch</h1>
-                    <p class="anim">You have a business that needs web presence or starting one online and want a
-                        trustworthy partner? Let's work together!</p>
-                    <p class="anim">Or just say Hi!</p>
-                    <form class="jotform-form mt-3" action="https://submit.jotform.com/submit/202635220764046/"
-                        method="post" name="form_202635220764046" id="202635220764046" accept-charset="utf-8"
-                        autocomplete="on">
-                        <input type="hidden" name="formID" value="202635220764046" />
-                        <input type="hidden" id="JWTContainer" value="" />
-                        <input type="hidden" id="cardinalOrderNumber" value="" />
-                        <div role="main" class="form-all">
-                            <ul class="form-section page-section">
-                                <li class="form-line jf-required anim" data-type="control_textbox" id="id_8">
-                                    <label class="form-label form-label-left form-label-auto" id="label_8"
-                                        for="input_8">
-                                        Name
-                                        <span class="form-required">
-                                            *
-                                        </span>
-                                    </label>
-                                    <div id="cid_8" class="form-input jf-required">
-                                        <input type="text" id="input_8" name="q8_name" data-type="input-textbox"
-                                            class="form-textbox validate[required]" size="30" value=""
-                                            data-component="textbox" aria-labelledby="label_8" required="" />
-                                    </div>
-                                </li>
-                                <li class="form-line jf-required anim" data-type="control_email" id="id_4">
-                                    <label class="form-label form-label-left form-label-auto" id="label_4"
-                                        for="input_4">
-                                        Email
-                                        <span class="form-required">
-                                            *
-                                        </span>
-                                    </label>
-                                    <div id="cid_4" class="form-input jf-required">
-                                        <input type="email" id="input_4" name="q4_email"
-                                            class="form-textbox validate[required, Email]" size="30" value=""
-                                            data-component="email" aria-labelledby="label_4" required="" />
-                                    </div>
-                                </li>
-                                <li class="form-line anim" data-type="control_phone" id="id_5">
-                                    <label class="form-label form-label-left form-label-auto" id="label_5"
-                                        for="input_5_full"> Phone Number </label>
-                                    <div id="cid_5" class="form-input">
-                                        <span class="form-sub-label-container " style="vertical-align:top">
-                                            <input type="tel" id="input_5_full" name="q5_phoneNumber[full]"
-                                                data-type="mask-number"
-                                                class="mask-phone-number form-textbox validate[Fill Mask]"
-                                                autoComplete="off" data-masked="true" value="" data-component="phone"
-                                                aria-labelledby="label_5" />
-                                        </span>
-                                    </div>
-                                </li>
-                                <li class="form-line jf-required anim" data-type="control_textarea" id="id_7">
-                                    <label class="form-label form-label-left form-label-auto" id="label_7"
-                                        for="input_7">
-                                        Message
-                                        <span class="form-required">
-                                            *
-                                        </span>
-                                    </label>
-                                    <div id="cid_7" class="form-input jf-required">
-                                        <textarea id="input_7" class="form-textarea validate[required]" name="q7_typeA"
-                                            cols="40" rows="6" data-component="textarea" required=""
-                                            aria-labelledby="label_7"></textarea>
-                                    </div>
-                                </li>
-                                <li class="form-line anim" data-type="control_button" id="id_2">
-                                    <div id="cid_2" class="form-input-wide">
-                                        <div style="text-align:left" data-align="left"
-                                            class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-                                            <button id="input_2" type="submit"
-                                                class="ml-0 form-submit-button button submit-button jf-form-buttons jsTest-submitField"
-                                                data-component="button" data-content="">
-                                                Submit
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li style="display:none">
-                                    Should be Empty:
-                                    <input type="text" name="website" value="" />
-                                </li>
-                            </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+                        <li class="nav-link-mb" id="me">
+                            <a class="nav-item" href="/me">Who am I?</a>
+                        </li>
+                        <li class="nav-link-mb" id="projects">
+                            <a class="nav-item" href="/projects">My work</a>
+                        </li>
+                        </li>
+                        <li class="nav-link-mb active" id="contact">
+                            <a class="nav-item" href="/contact">Get in touch</a>
+                        </li>
+                        <li class="nav-link-mb" id="resume">
+                            <a class="nav-item" href="/pdfs/resume.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                    <label class="toggle-label toggle-label-mb" title="">
+                        <span id="toggle-title"></span>
+                        <div class="toggle">
+                            <input type="checkbox" class="toggle-state toggleState" />
+                            <div class="indicator2"></div>
+                            <div class="indicator"></div>
                         </div>
-                    </form>
-                    <h4 class="anim">Or reach me out at <a class="purple"
-                            href="mailto:arpit@arpitdalal.com">arpit@arpitdalal.com</a>
-                    </h4>
-                    <h4 class="anim mt-4">Let's get social</h4>
-                    <div class="anim social-links mx-auto">
-                        <a href="https://github.com/arpitdalal" class="social-link github" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                            </span>
-                            Github
-                        </a>
-                        <a href="https://linkedin.com/in/arpitdalal/" class="social-link linkedin" target="_blank">
-                            <span class="svg-bg">
-                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </span>
-                            LinkedIn
-                        </a>
+                    </label>
+                </div>
+            </nav>
+
+            <div class="cookie-consent cookie-mb pl-3 pr-2 mt-2">
+                This site uses cookies to offer better experience <button class="cookie-okay">Okay</button>
+            </div>
+            <div class="card mx-auto mt-3">
+                <div class="card-body">
+                    <div id="contactDiv" class="main-div">
+                        <h1 class="anim">Get in touch</h1>
+                        <p class="anim">You have a business that needs web presence or starting one online and want a
+                            trustworthy partner? Let's work together!</p>
+                        <p class="anim">Or just say Hi!</p>
+                        <form class="jotform-form mt-3" action="https://submit.jotform.com/submit/202635220764046/"
+                            method="post" name="form_202635220764046" id="202635220764046" accept-charset="utf-8"
+                            autocomplete="on">
+                            <input type="hidden" name="formID" value="202635220764046" />
+                            <input type="hidden" id="JWTContainer" value="" />
+                            <input type="hidden" id="cardinalOrderNumber" value="" />
+                            <div role="main" class="form-all">
+                                <ul class="form-section page-section">
+                                    <li class="form-line jf-required anim" data-type="control_textbox" id="id_8">
+                                        <label class="form-label form-label-left form-label-auto" id="label_8"
+                                            for="input_8">
+                                            Name
+                                            <span class="form-required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <div id="cid_8" class="form-input jf-required">
+                                            <input type="text" id="input_8" name="q8_name" data-type="input-textbox"
+                                                class="form-textbox validate[required]" size="30" value=""
+                                                data-component="textbox" aria-labelledby="label_8" required="" />
+                                        </div>
+                                    </li>
+                                    <li class="form-line jf-required anim" data-type="control_email" id="id_4">
+                                        <label class="form-label form-label-left form-label-auto" id="label_4"
+                                            for="input_4">
+                                            Email
+                                            <span class="form-required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <div id="cid_4" class="form-input jf-required">
+                                            <input type="email" id="input_4" name="q4_email"
+                                                class="form-textbox validate[required, Email]" size="30" value=""
+                                                data-component="email" aria-labelledby="label_4" required="" />
+                                        </div>
+                                    </li>
+                                    <li class="form-line anim" data-type="control_phone" id="id_5">
+                                        <label class="form-label form-label-left form-label-auto" id="label_5"
+                                            for="input_5_full"> Phone Number </label>
+                                        <div id="cid_5" class="form-input">
+                                            <span class="form-sub-label-container " style="vertical-align:top">
+                                                <input type="tel" id="input_5_full" name="q5_phoneNumber[full]"
+                                                    data-type="mask-number"
+                                                    class="mask-phone-number form-textbox validate[Fill Mask]"
+                                                    autoComplete="off" data-masked="true" value=""
+                                                    data-component="phone" aria-labelledby="label_5" />
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="form-line jf-required anim" data-type="control_textarea" id="id_7">
+                                        <label class="form-label form-label-left form-label-auto" id="label_7"
+                                            for="input_7">
+                                            Message
+                                            <span class="form-required">
+                                                *
+                                            </span>
+                                        </label>
+                                        <div id="cid_7" class="form-input jf-required">
+                                            <textarea id="input_7" class="form-textarea validate[required]"
+                                                name="q7_typeA" cols="40" rows="6" data-component="textarea" required=""
+                                                aria-labelledby="label_7"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="form-line anim" data-type="control_button" id="id_2">
+                                        <div id="cid_2" class="form-input-wide">
+                                            <div style="text-align:left" data-align="left"
+                                                class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+                                                <button id="input_2" type="submit"
+                                                    class="ml-0 form-submit-button button submit-button jf-form-buttons jsTest-submitField"
+                                                    data-component="button" data-content="">
+                                                    Submit
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="display:none">
+                                        Should be Empty:
+                                        <input type="text" name="website" value="" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                        <h4 class="anim">Or reach me out at <a class="purple"
+                                href="mailto:arpit@arpitdalal.com">arpit@arpitdalal.com</a>
+                        </h4>
+                        <h4 class="anim mt-4">Let's get social</h4>
+                        <div class="anim social-links mx-auto">
+                            <a href="https://github.com/arpitdalal" class="social-link github" target="_blank">
+                                <span class="svg-bg">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </span>
+                                Github
+                            </a>
+                            <a href="https://linkedin.com/in/arpitdalal/" class="social-link linkedin" target="_blank">
+                                <span class="svg-bg">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="#7f5af0" stroke-width="2"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </span>
+                                LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
