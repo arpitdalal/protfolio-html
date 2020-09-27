@@ -168,10 +168,6 @@ a.cta.cta-primary {
     background: var(--ad-highlight);
 }
 
-a.cta {
-    transition: color .5s;
-}
-
 a.cta.cta-primary {
     color: var(--ad-background)
 }

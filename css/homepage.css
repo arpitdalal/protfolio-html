@@ -261,9 +261,21 @@
 /* end load div */
 
 /* mobile css starts */
+.mobile .fixed-top {
+    animation: fadeIn .2s;
+    z-index: 3;
+}
+
+.mobile .fixed-top.invisible {
+    position: fixed;
+    top: -100%;
+    animation: fadeOut 2s;
+}
+
 .mobile .container-div {
     height: 100vh;
     padding-bottom: 20px;
+    padding-top: 75px;
 }
 
 .mobile .card-img-top {

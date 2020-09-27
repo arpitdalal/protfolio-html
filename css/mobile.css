@@ -25,13 +25,24 @@
     --ad-card-shadow: 0 4px 8px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0);
     background: var(--ad-background);
     color: var(--ad-text);
-    transition: .5s;
     transition: background .5s, box-shadow .5s;
+}
+
+.fixed-top {
+    animation: fadeIn .2s;
+    z-index: 3;
+}
+
+.fixed-top.invisible {
+    position: fixed;
+    top: -100%;
+    animation: fadeOut 2s;
 }
 
 .container-div {
     height: 100vh;
     padding-bottom: 20px;
+    padding-top: 75px;
 }
 
 .card {
