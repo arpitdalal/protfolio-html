@@ -2,6 +2,10 @@ a:hover h3 {
     color: var(--ad-text);
 }
 
+.project {
+    padding: .5rem .5rem inherit;
+}
+
 .card img {
     box-shadow: 3px 3px 6px rgba(127, 90, 240, .3);
 }
