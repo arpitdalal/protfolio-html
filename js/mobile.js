@@ -1,27 +1,5 @@
-const $navLinksMb = jQuery('.nav-link-mb');
-const $stickyNavbar = jQuery('.fixed-top');
-
-let oldScrollPosition = 0;
-let isScrollingUp = false;
-let isHeaderVisible = true;
-
-window.addEventListener('scroll', () => {
-  isScrollingUp = oldScrollPosition > window.scrollY;
-  oldScrollPosition = window.scrollY;
-
-  if (!isScrollingUp && window.scrollY > 50 && isHeaderVisible) {
-    $stickyNavbar.addClass('invisible');
-    isHeaderVisible = false;
-  }
-
-  if (isScrollingUp && !isHeaderVisible) {
-    $stickyNavbar.removeClass('invisible');
-    isHeaderVisible = true;
-  }
-});
-
 jQuery(document).ready(function() {
-  jQuery($navLinksMb).on('click', function() {
+  jQuery('.nav-link-mb').on('click', function() {
     if (jQuery(this).attr('id') === 'resume') {
       return;
     }

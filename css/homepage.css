@@ -219,10 +219,23 @@
     border-radius: .25rem;
 }
 
+.main #load img {
+    opacity: .8;
+    transition: opacity .5s ease-in-out;
+}
+
+.main.light-mode #load img {
+    opacity: 1;
+}
+
 #load .img-dk {
     max-width: 300px;
     border-top-left-radius: 25px;
     margin-right: 1rem;
+}
+
+#load .cta-div {
+    display: none !important;
 }
 
 #meDiv .img-dk {
@@ -230,7 +243,8 @@
 }
 
 #meDiv,
-#contactDiv {
+#contactDiv,
+#projectsDiv {
     padding: 1.5rem;
 }
 
@@ -252,10 +266,6 @@
 
 #projectsDiv .cta {
     width: 100%;
-}
-
-.cta-div {
-    display: none !important;
 }
 
 /* end load div */
