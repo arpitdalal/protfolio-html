@@ -6,8 +6,12 @@ a:hover h3 {
     padding: .5rem .5rem inherit;
 }
 
+.light-mode .card img {
+    box-shadow: 4px 4px 8px rgba(115, 72, 244, .6);
+}
+
 .card img {
-    box-shadow: 3px 3px 6px rgba(127, 90, 240, .3);
+    box-shadow: 4px 4px 8px  rgba(189, 95, 255, 0.6);
 }
 
 /*MEDIA QUERIES*/

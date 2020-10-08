@@ -37,6 +37,12 @@
         inset -3px -3px 6px var(--ad-box-shadow-light);
 }
 
+#input_2 {
+    transition: all .5s;
+    background: var(--ad-highlight);
+    color: #e6e6e6;
+}
+
 .jotform-form .form-section .form-required {
     color: #FF4E5D;
 }
@@ -71,4 +77,9 @@ li.form-line-error .form-error-message img {
 
 #contactDiv .social-links {
     max-width: 200px;
+}
+
+#contactDiv .bmc-btn-container {
+    max-width: 400px;
+    margin: 0 auto;
 }

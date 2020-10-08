@@ -132,6 +132,10 @@ p+p {
     align-items: center;
 }
 
+.social-link svg {
+    stroke: var(--ad-icon);
+}
+
 .social-link:hover .svg-bg {
     box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
         -3px -3px 6px var(--ad-box-shadow-light);
@@ -151,8 +155,73 @@ p+p {
     border-radius: 50%;
 }
 
+/* start BMC styles */
+.bmc-btn-container {
+    transition: box-shadow .5s;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px var(--ad-box-shadow-dark),
+        -6px -6px 12px var(--ad-box-shadow-light);
+}
+
+.bmc-btn-container:hover {
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
+}
+
+.bmc-btn-container a {
+    transition: all .5s;
+    border-radius: 12px;
+    font-size: 26px;
+    border: none;
+    line-height: 27px;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
+    font-family: Cookie !important;
+    transition: background .5s, box-shadow .5s;
+    width: 100%;
+    background: var(--ad-background);
+    background-color: unset !important;
+    justify-content: center;
+    padding: .4rem 1rem;
+    height: unset;
+    color: var(--ad-text);
+}
+
+.bmc-btn-container a span {
+    transition: all .5s;
+}
+
+.bmc-btn-container a:hover {
+    color: var(--ad-text);
+}
+
+.bmc-btn-container svg {
+    height: 30px !important;
+    margin-bottom: 1px !important;
+    box-shadow: none !important;
+    border: none !important;
+    vertical-align: middle !important;
+    transform: scale(0.9);
+}
+
+.bmc-btn-container svg path {
+    transition: all .5s;
+}
+
+.bmc-btn-container svg path:last-child {
+    fill: var(--ad-text);
+}
+
+.bmc-btn-container svg path:nth-child(12) {
+    fill: var(--ad-highlight);
+}
+/* end BMC styles */
+
 /* start CTA buttons */
 a.cta {
+    transition: background .5s;
     cursor: pointer;
     padding: 10px 0;
     border-radius: 25px;
