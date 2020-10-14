@@ -37,6 +37,10 @@
         inset -3px -3px 6px var(--ad-box-shadow-light);
 }
 
+.jotform-form .form-sub-label {
+    display: inherit;
+}
+
 #input_2 {
     transition: all .5s;
     background: var(--ad-highlight);

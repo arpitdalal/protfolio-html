@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
   }
 
   jQuery('.cookie-policy').on('click', function() {
-    let policyId = $(this).attr('id');
+    let policyId = jQuery(this).attr('id');
     jQuery('.nav-link.active').removeClass('active');
     $load.load(`/cookie-Policy #${policyId}Div`);
   })
