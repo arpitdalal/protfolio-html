@@ -12,6 +12,12 @@ jQuery(document).ready(function() {
       .from('.anim', { y: -20, opacity: 0, stagger: 0.05 });
   }
 
+  jQuery('.cookie-policy').on('click', function() {
+    let policyId = $(this).attr('id');
+    jQuery('.nav-link.active').removeClass('active');
+    $load.load(`/cookie-Policy #${policyId}Div`);
+  })
+
   jQuery('.nav-link').on('click', function() {
     let navLinkId = jQuery(this).attr('id');
     jQuery('.nav-link.active').removeClass('active');

@@ -243,7 +243,8 @@
 
 #meDiv,
 #contactDiv,
-#projectsDiv {
+#projectsDiv,
+#cookiePolicyDiv {
     padding: 1.5rem;
 }
 
