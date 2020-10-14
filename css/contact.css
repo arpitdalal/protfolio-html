@@ -23,6 +23,7 @@
         -4px -4px 8px var(--ad-box-shadow-light);
     border: none;
     transition: background .5s, box-shadow .5s;
+    -webkit-appearance: none; /* safari fix */
 }
 
 .jotform-form .form-section input:active,
