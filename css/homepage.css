@@ -200,6 +200,29 @@
 }
 
 /* 404 page styles begin */
+.nav-link-not-found {
+    transition: background .5s, box-shadow .5s;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px var(--ad-box-shadow-dark),
+        -6px -6px 12px var(--ad-box-shadow-light);
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.nav-link-not-found:hover {
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
+}
+
+.nav-link-not-found.active {
+    color: var(--ad-highlight);
+    background: var(--ad-background);
+    box-shadow: inset 2px 2px 4px var(--ad-box-shadow-dark),
+        inset -2px -2px 4px var(--ad-box-shadow-light);
+}
+
 .not-found {
     display: flex;
     flex-direction: column;
@@ -228,6 +251,7 @@
 }
 
 #load .img-dk {
+    max-height: 300px;
     max-width: 300px;
     margin-right: 1rem;
     box-shadow: none;

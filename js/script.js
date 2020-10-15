@@ -2,8 +2,24 @@ const $load = jQuery('#load');
 const $projectLinks = jQuery('.project-links');
 let tl = gsap.timeline({ duration: 0.05 });
 
+function getUrlVars() {
+  var vars = [], hash;
+  var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+  for(var i = 0; i < hashes.length; i++)
+  {
+      hash = hashes[i].split('=');
+      vars.push(hash[0]);
+      vars[hash[0]] = hash[1];
+  }
+  return vars;
+}
+
 jQuery(document).ready(function() {
-  $load.load('/me #meDiv');
+  const tab = getUrlVars()['tab'];
+  // removing the query part from the url so no one can change the amount
+  const url = window.location.href.split('?')[0];
+  window.history.replaceState({}, document.title, url);
+
   if (gsap) {
     tl
       .from('.left-div', { x: -20, opacity: 0, duration: 0.2 })
@@ -55,4 +71,6 @@ jQuery(document).ready(function() {
     }
     $load.load(`/${navLinkId} #${navLinkId}Div`);
   });
+
+  tab !== '' ? jQuery(`span#${tab}`).click() : $load.load('/me #meDiv');
 });
