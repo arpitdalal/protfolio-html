@@ -114,16 +114,6 @@ p+p {
     color: var(--ad-highlight);
 }
 
-.cookie-policy {
-    background: var(--ad-background);
-    color: currentColor;
-    transition: .5s;
-    padding: 1px 10px;
-    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark), -3px -3px 6px var(--ad-box-shadow-light);
-    border-radius: 25px;
-    cursor: pointer;
-}
-
 .cookie-policy:hover {
     color: currentColor;
 }

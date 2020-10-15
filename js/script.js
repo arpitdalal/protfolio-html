@@ -28,7 +28,8 @@ jQuery(document).ready(function() {
       .from('.anim', { y: -20, opacity: 0, stagger: 0.05 });
   }
 
-  jQuery('.cookie-policy').on('click', function() {
+  jQuery('.cookie-policy').on('click', function(e) {
+    e.preventDefault();
     let policyId = jQuery(this).attr('id');
     jQuery('.nav-link.active').removeClass('active');
     $load.load(`/cookie-Policy #${policyId}Div`);
@@ -72,5 +73,5 @@ jQuery(document).ready(function() {
     $load.load(`/${navLinkId} #${navLinkId}Div`);
   });
 
-  tab !== '' ? jQuery(`span#${tab}`).click() : $load.load('/me #meDiv');
+  tab !== undefined ? jQuery(`span#${tab}`).click() : $load.load('/me #meDiv');
 });
