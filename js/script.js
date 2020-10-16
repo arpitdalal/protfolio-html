@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
     jQuery(this).addClass('active');
     if (navLinkId === 'resume') {
       $load.empty();
-      $load.append('<iframe width="100%" height="100%" style="border: none;" src="./pdfs/resume.pdf"></iframe>');
+      $load.append('<iframe width="100%" height="100%" style="border: none;" src="/pdfs/resume.pdf"></iframe>');
       return;
     }
     if (navLinkId === 'contact') {

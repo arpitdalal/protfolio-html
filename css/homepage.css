@@ -223,15 +223,6 @@
         inset -2px -2px 4px var(--ad-box-shadow-light);
 }
 
-.not-found {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-}
-
 /* 404 page styles end */
 
 /* load div */
@@ -335,6 +326,25 @@
     overflow-y: auto;
     overflow-x: hidden;
     width: 90%;
+}
+
+
+.mobile .cookie-mb {
+    transition: .5s;
+    font-size: 1rem;
+    color: currentColor;
+    display: none;
+}
+
+.mobile .cookie-mb .cookie-okay {
+    background: var(--ad-card-background);
+    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
+        -3px -3px 6px var(--ad-box-shadow-light);
+    border-radius: 25px;
+    color: currentColor;
+    border: none;
+    transition: .5s;
+    padding: 1px 10px;
 }
 
 .mobile .cta+.cta {
