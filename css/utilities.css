@@ -114,6 +114,11 @@ p+p {
     color: var(--ad-highlight);
 }
 
+.fill-color {
+    transition: fill .5s;
+    fill: var(--ad-highlight);
+}
+
 .cookie-policy:hover {
     color: currentColor;
 }
