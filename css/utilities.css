@@ -243,11 +243,9 @@ a.cta {
 }
 
 a.cta.cta-primary {
+    transition: .5s;
     background: var(--ad-highlight);
-}
-
-a.cta.cta-primary {
-    color: #e6e6e6
+    color: var(--ad-background);
 }
 
 /* end CTA buttons */
