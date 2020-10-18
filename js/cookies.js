@@ -1,9 +1,6 @@
 const $main = jQuery('.main');
 const $toggleThemeSwitch = jQuery('.toggleState');
-const $toggleThemeLabel = jQuery('.toggle-label');
-const $toggleTitle = jQuery('#toggle-title');
 const $cookieConsent = jQuery('.cookie-consent');
-const $cookieOkayBtn = jQuery('.cookie-okay');
 
 const getCookieValue = (name) => {
   const value = `; ${document.cookie}`;
@@ -13,12 +10,12 @@ const getCookieValue = (name) => {
 
 const setTheme = (mode) => {
   $toggleThemeSwitch.prop('checked', mode == 'dark' ? false : true);
-  $toggleThemeLabel.attr('title', `Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
-  $toggleTitle.text(`Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
+  jQuery('.toggle-label').attr('title', `Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
+  jQuery('#toggle-title').text(`Toggle to ${mode == 'dark' ? 'light' : 'dark'} mode`);
   document.cookie = `theme=${mode}; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT; SameSite=Strict;`;
 };
 
-$cookieOkayBtn.on('click', () => {
+jQuery('.cookie-okay').on('click', () => {
   $cookieConsent.css('display', 'none');
   document.cookie = 'consent=yes; path=/; expires=Wed, 14 Jun 3017 07:00:00 GMT; SameSite=Strict;';
 });

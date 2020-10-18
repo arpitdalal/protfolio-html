@@ -1,6 +1,11 @@
 const $load = jQuery('#load');
-const $projectLinks = jQuery('.project-links');
 let tl = gsap.timeline({ duration: 0.05 });
+
+if (gsap) {
+  tl
+    .from('.toggle-label', { scale: 0, opacity: 0 })
+    .from('.anim', { y: -20, opacity: 0, stagger: 0.02 });
+}
 
 function getUrlVars() {
   var vars = [], hash;
@@ -19,14 +24,6 @@ jQuery(document).ready(function() {
   // removing the query part from the url so no one can change the amount
   const url = window.location.href.split('?')[0];
   window.history.replaceState({}, document.title, url);
-
-  if (gsap) {
-    tl
-      .from('.left-div', { x: -20, opacity: 0, duration: 0.2 })
-      .from('.right-div', { x: 20, opacity: 0, duration: 0.2 }, '-=0.2')
-      .from('.toggle-label', { scale: 0, opacity: 0 })
-      .from('.anim', { y: -20, opacity: 0, stagger: 0.05 });
-  }
 
   jQuery('.cookie-policy').on('click', function(e) {
     e.preventDefault();

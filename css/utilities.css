@@ -110,6 +110,10 @@ p+p {
         -3px -3px 6px var(--ad-box-shadow-light);
 }
 
+.w-50 {
+    width: 50%;
+}
+
 .purple {
     color: var(--ad-highlight);
 }
@@ -117,6 +121,10 @@ p+p {
 .fill-color {
     transition: fill .5s;
     fill: var(--ad-highlight);
+}
+
+.cookie-policy {
+    transition: color .5s;
 }
 
 .cookie-policy:hover {
@@ -229,8 +237,7 @@ p+p {
 /* end BMC styles */
 
 /* start CTA buttons */
-a.cta {
-    transition: background .5s;
+.cta {
     cursor: pointer;
     padding: 10px 0;
     border-radius: 25px;
@@ -242,9 +249,16 @@ a.cta {
     transition: background .5s, box-shadow .5s;
 }
 
-a.cta.cta-primary {
-    transition: .5s;
+.cta.cta-primary {
     background: var(--ad-highlight);
+    color: var(--ad-background);
+}
+
+.cta a {
+    transition: color .5s;
+}
+
+.cta.cta-primary a {
     color: var(--ad-background);
 }
 

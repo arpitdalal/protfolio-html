@@ -569,33 +569,6 @@
 }
 
 /* end mobile toggle */
-
-/* start CTA buttons */
-.mobile .cta {
-    cursor: pointer;
-    padding: 10px 0;
-    border-radius: 25px;
-    background: var(--ad-background);
-    color: var(--ad-text);
-    box-shadow: 3px 3px 6px var(--ad-box-shadow-dark),
-        -3px -3px 6px var(--ad-box-shadow-light);
-    margin: 10px;
-    transition: background .5s, box-shadow .5s;
-}
-
-.mobile .cta.cta-primary {
-    background: var(--ad-highlight);
-}
-
-.mobile .cta a {
-    transition: color .5s;
-}
-
-.mobile .cta.cta-primary a {
-    color: var(--ad-background)
-}
-
-/* end CTA buttons */
 /* mobile css ends */
 
 /* responsive styles */
