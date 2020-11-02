@@ -21,7 +21,7 @@ function getUrlVars() {
 
 jQuery(document).ready(function() {
   const tab = getUrlVars()['tab'];
-  // removing the query part from the url so no one can change the amount
+  // removing the query part from the url
   const url = window.location.href.split('?')[0];
   window.history.replaceState({}, document.title, url);
 
@@ -71,4 +71,18 @@ jQuery(document).ready(function() {
   });
 
   tab !== undefined ? jQuery(`span#${tab}`).click() : $load.load('/me #meDiv');
+
+  // mobile
+  jQuery('.nav-link-mb').on('click', function() {
+    if (jQuery(this).attr('id') === 'resume') {
+      return;
+    }
+    window.location.href = `/${jQuery(this).attr('id')}`;
+  });
+
+  // 404
+  jQuery('.nav-link-not-found').on('click', function() {
+    let notFoundLinkId = jQuery(this).attr('id');
+    window.location.replace(`/?tab=${notFoundLinkId}`);
+  });
 });
