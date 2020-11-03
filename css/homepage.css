@@ -242,13 +242,6 @@
     opacity: 1;
 }
 
-#load .img-dk {
-    max-height: 300px;
-    max-width: 300px;
-    margin-right: 1rem;
-    box-shadow: none;
-}
-
 #load .cta-div {
     display: none !important;
 }
@@ -264,6 +257,14 @@
     padding: 1.5rem;
 }
 
+#meDiv .about-img-container {
+    max-width: 300px;
+    margin-right: 1rem;
+}
+
+#meDiv .img-dk {
+    box-shadow: none;
+}
 
 #projectsDiv .col-lg-6+.col-lg-6 {
     margin-top: 7rem;
@@ -328,7 +329,6 @@
     overflow-x: hidden;
     width: 90%;
 }
-
 
 .mobile .cookie-mb {
     transition: .5s;
